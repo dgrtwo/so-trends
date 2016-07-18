@@ -12,8 +12,8 @@ shinyServer(function(input, output) {
       layer_lines() %>%
       add_axis("x", format = "d") %>%
       add_axis("y", title = "% of Stack Overflow questions that year",
-               format = ".1%",
-               properties = axis_props(title = list(dy = -10))) %>%
+               format = ".2%",
+               properties = axis_props(title = list(dy = -15))) %>%
       bind_shiny("timePlot", "timePlot_ui")
   )
 })
