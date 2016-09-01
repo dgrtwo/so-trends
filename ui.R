@@ -22,7 +22,8 @@ shinyUI(fluidPage(
            "behind this Shiny application.")
     ),
     mainPanel(
-      ggvisOutput("timePlot")
+      ggvisOutput("timePlot"),
+      includeHTML("url_handler.js")
     )
   )
 ))
